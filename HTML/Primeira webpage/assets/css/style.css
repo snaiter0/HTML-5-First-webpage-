@@ -5,6 +5,7 @@ estilos da pagina index.html
     font-size: 20px;
     padding: 15px;
     color: rgb(206, 206, 206);
+    text-shadow: 1px 1px black;
 }
 .center{
     text-align: center;
@@ -41,6 +42,7 @@ estilos da pagina index.html
     display: inline;
     color: white;
     padding: 25px;
+    text-shadow: 1px 1px rgb(184, 8, 8);
     
 }
 
@@ -86,8 +88,14 @@ estilos da pagina index.html
 
 .Text-Shadow
 {
-    text-shadow: rgb(184, 8, 8);
+    text-shadow: 1px 1px rgb(184, 8, 8);
 }
+
+.object-Shadow{
+    box-shadow: 5px 5px #888888;
+}
+
+
 .tm-botton{
     padding: 25px;
 }
@@ -100,6 +108,16 @@ estilos da pagina index.html
 
     margin-bottom: 50px;
 }
+
+.p0{
+    font-size: 15px;
+    color: white;
+}
+.colorWhite{
+    color:white
+}
+
+
 /*
 estilos da pagina contatos.html
 */

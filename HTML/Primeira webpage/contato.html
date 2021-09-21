@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body
+        {
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,3,36,1) 0%, rgba(17,119,142,1) 0%, rgba(30,30,33,1) 15%, rgba(9,9,36,1) 25%, rgba(6,93,111,1) 33%, rgba(7,6,36,1) 59%, rgba(15,117,140,1) 67%, rgba(6,5,36,1) 83%, rgba(20,20,34,0.8449754901960784) 100%, rgba(9,118,140,1) 100%);       
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    
 <div>
     <ul id="menu">
         <li><a href="index.html" >Capitulo 1</li></a>
@@ -25,46 +31,56 @@
     </ul>
 </div>
     <hr>
-    <div class="center">
-        <h1>Entre em contato comigo</h1>
+    <div class="center" >
+        <h1 class="colorWhite Text-Shadow">Entre em contato comigo</h1>
         
     </div>
     
     <div class="container mb-bottom">
         <form>
 
-            <label for="nome">Nome:<br></label>
-            <input type="text" id="nome"> <br>
-
+            <label for="nome" class="p0">Nome:<br></label>
+            <input type="text" id="nome" onkeyup="validaNome()"> 
+            <div id='txtNome'>
+            </div>
+            
             <label for="email">E-mail:</label><br>
-            <input type="email" id="email"><br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id='txtEmail'>
+            </div>
 
             <label for="assunto">Assunto: </label><br>
-            <textarea name="assunto" id="assunto" cols="100" rows="15"></textarea><br>
-
-            <button>Enviar</button>
+            <textarea name="assunto" id="assunto" cols="100" rows="15" onkeyup="validaAssunto()"></textarea><br>
+            <div id='txtAssunto'>
+            </div>
+            <button onclick="enviar()">Enviar</button>
           
          </form>
          <div class="ml-50">
-            <p>Av. Paulista, 100</p>
-             <p>São Paulo, SP</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0980322469036!2d-46.654126285022166!3d-23.56492238468107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1631808918999!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p class="colorWhite">Av. Paulista, 100</p>
+             <p class="colorWhite">São Paulo, SP</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0980322469036!2d-46.654126285022166!3d-23.56492238468107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1631808918999!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
         </div>
     </div>
 <hr>
 <footer>
     <div class="container">
         <a href="https://www.facebook.com/douglas.lopes.1004/" target="_blank">
-        <img class="tm-social p30" src="assets/facebook.png" alt="logo do facebook"></a>
+        <img class="tm-social p30" src="assets/img/facebook.png" alt="logo do facebook"></a>
         <a href="https://www.instagram.com/douglas_lopsz/" target="_blank">
-        <img class="tm-social p30" src="assets/instagram.png" alt="logo do facebook"></a>
+        <img class="tm-social p30" src="assets/img/instagram.png" alt="logo do facebook"></a>
         <a href="https://www.linkedin.com/in/douglas-souza-94675616a/" target="_blank"> 
-        <img class="tm-social p30" src="assets/linkedin.png" alt="logo do facebook"></a>
+        <img class="tm-social p30" src="assets/img/linkedin.png" alt="logo do facebook"></a>
     </div>
-    <p class="center">
-        Todos os direitos reservados para Douglas L Souza &copy;
-    </p>
+
+    <div class="center">
+        <p class="colorWhite">
+            Todos os direitos reservados para Douglas L Souza &copy;
+        </p>
+    </div>
+    
 </footer>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>
