@@ -1,0 +1,33 @@
+
+.font-Brodway{
+    font-family: "Brodway";
+}
+
+
+.bg-gray{
+    background-color: rgb(206, 206, 206);
+}
+
+.altura-100{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.tm-social{
+    height: 50px;
+    width: 50px;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.mr-50{
+    margin-right: 50px;
+}
+
+.main{
+    display:flex;
+    justify-content: flex-end;
+    }

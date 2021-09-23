@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background-color: rgb(206, 206, 206);
+        }
+    </style>
+    <title>Ecommerce</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-success font-Brodway">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">GAIA</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contate-nos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About-Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <!--Botão de login e cadastro-->
+    <div class="p-md-1 main">
+            <a href=""> <button class="bg-gray">Logar</button> </a>
+    </div>
+    <div class="p-md-1 main">
+        <a href="Cadastro"> <button class="bg-gray flex"> Cadastrar</button></a>
+    </div>
+    
+    <!--Carrosel-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="http://nacionalsol.com.br/wp-content/uploads/2021/05/como-e-feito-energia-solar.png"
+                    class="d-block w-60" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="http://nacionalsol.com.br/wp-content/uploads/2021/05/como-e-feito-energia-solar.png" class="d-block w-60" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="http://nacionalsol.com.br/wp-content/uploads/2021/05/como-e-feito-energia-solar.png" class="d-block w-60" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Carrosel-->
+
+    <!--Ofertas!!!-->
+
+    <div class="row p-md-3">
+        <div class="col-sm-6 p-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="assets/imgs/download.jpg" alt="Talher de madeira" class="d-flex container" height="350px"
+                        width="350px">
+                    <h5 class="card-title">Talher de madeira</h5>
+                    <p class="card-text">Talher para cozinha</p>
+                    <a href="#" class="btn btn-primary bg-success">R$19,99</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 p-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="assets/imgs/painel solar jgp.jfif" alt="" class="d-flex container" height="350px"
+                        width="350px">
+                    <h5 class="card-title">Painel solar</h5>
+                    <p class="card-text">Rainbow sun</p>
+                    <a href="#" class="btn btn-primary bg-success">R$199,90</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 p-md-4">
+        <div class="card">
+            <div class="card-body">
+                <img src="assets/imgs/download.jpg" alt="Talher de madeira" class="d-flex container" height="350px"
+                    width="350px">
+                <h5 class="card-title">?</h5>
+                <p class="card-text">?</p>
+                <a href="#" class="btn btn-primary bg-success">R$????</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Ofertas!!!-->
+
+    <!--Recurso de navegação entre pag's-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center p-md-3">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Recurso de navegação entre pag's-->
+
+
+    <!--Rodapé-->
+    <hr>
+    <footer>
+
+        <div class="row mb-3">
+            <div class="col-md-12 d-flex justify-content-center">
+                <a href="https://www.facebook.com/douglas.lopes.1004/" target="_blank" class="p-3">
+                    <img class="tm-social" src="assets/imgs/facebook.png" alt="logo do facebook"></a>
+                <a href="https://www.instagram.com/douglas_lopsz/" target="_blank" class="p-3">
+                    <img class="tm-social" src="/assets/imgs/instagram.png" alt="logo do facebook"></a>
+                <a href="https://www.linkedin.com/in/douglas-souza-94675616a/" target="_blank" class="p-3">
+                    <img class="tm-social" src="assets/imgs/linkedin.png" alt="logo do facebook"></a>
+            </div>
+        </div>
+
+
+        <div class="p-md-3 bg-success">
+            <p align=center class="text-light">
+                Todos os direitos autorais reservados &copy;
+            </p>
+        </div>
+    </footer>
+    <div class="bg-success">
+    </div>
+
+    <!--Rodapé-->
+</body>
+
+</html>
